@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/MainText"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:text="Q-Park"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/IdText"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="아이디"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/IdEdit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/IdEdit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="아이디"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/IdText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/PwText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="패스워드"
+        android:textAlignment="center"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/PwEdit"
+        app:layout_constraintTop_toBottomOf="@id/IdText" />
+
+
+    <EditText
+        android:id="@+id/PwEdit"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/PwText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IdEdit" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="로그인"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Register"
+        app:layout_constraintTop_toBottomOf="@id/PwEdit" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="회원가입"
+        app:layout_constraintLeft_toRightOf="@id/Login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PwEdit" />
+
+</android.support.constraint.ConstraintLayout>
